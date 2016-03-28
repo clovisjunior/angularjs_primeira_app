@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app>
+<html ng-app="myapp">
 <head>
 	<meta charset="utf8">
 	<title>Primeira Aplicação AngularJS</title>
@@ -11,22 +11,50 @@
 
 	<h1>Minha primeira aplicação AngularJS</h1>
 	
-	<div>
+	<div ng-controller="NomeController">
 		<label>Nome: </label>
 		<input type="text" ng-model="nome" placeholder="Digite seu nome"/>
 		<h4>Olá, {{nome}}</h4>
 	</div>
 
-	<div>
+	<div ng-controller="ExpressaoController">
 		<label>Expressões: </label>		
 		<h4>Consigo fazer expressões:</h4>
 		<ul>
 			<li>1 + 10 = {{1+10}}</li>
 			<li>50 - 48 = {{50 - 48}}</li>
 			<li>3 * 7 = {{3 * 7}}</li>
-			<li>8 / 3 = {{8 / 3}}</li>
+			<li>8 / 3 = {{8 / 3}}</li>			
 		</ul>
+
+		<label>Número 1: </label>
+		<input type="text" ng-model="numero1" placeholder="Número"/>
+
+		<label>Número 2: </label>
+		<input type="text" ng-model="numero2" placeholder="Número"/>
+
+		<button ng-click="somar()">Somar</button>
+
+		Resultado: {{resultado}}
 	</div>
+
+	<script>
+
+		angular.module("myapp", [])
+		.controller('NomeController', function($scope){
+			$scope.nome = 'João da Silva';
+		})
+		.controller('ExpressaoController', function($scope){
+			$scope.numero1 = 10;
+			$scope.numero2 = 50;
+			$scope.resultado = 0;
+
+			$scope.somar = function(){
+				$scope.resultado = parseFloat($scope.numero1) + parseFloat($scope.numero2);
+			}
+		});
+		
+	</script>
 
 </body>
 </html>
