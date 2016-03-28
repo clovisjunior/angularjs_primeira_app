@@ -11,5 +11,22 @@
 
 	<h1>Minha primeira aplicação AngularJS</h1>
 	
+	<div>
+		<label>Nome: </label>
+		<input type="text" ng-model="nome" placeholder="Digite seu nome"/>
+		<h4>Olá, {{nome}}</h4>
+	</div>
+
+	<div>
+		<label>Expressões: </label>		
+		<h4>Consigo fazer expressões:</h4>
+		<ul>
+			<li>1 + 10 = {{1+10}}</li>
+			<li>50 - 48 = {{50 - 48}}</li>
+			<li>3 * 7 = {{3 * 7}}</li>
+			<li>8 / 3 = {{8 / 3}}</li>
+		</ul>
+	</div>
+
 </body>
 </html>
