@@ -12,7 +12,7 @@ Cada etapa aborta um conjunto de temas a serem explicados.
  * Ativação do AngularJS através da diretiva ng-app
 * 2_etapa
   * Introdução a Diretivas (básico)
-   * ng-app (https://code.angularjs.org/1.4.10/docs/api/ng/directive/ngApp)
-   * ng-model (https://code.angularjs.org/1.4.10/docs/api/ng/directive/ngModel)
-  * Two-Way Data Binding (https://code.angularjs.org/1.4.10/docs/guide/databinding)
-  * {{ }} expressões (https://code.angularjs.org/1.4.10/docs/guide/expression)
+   * ng-app (https://code.angularjs.org/1.5.1/docs/api/ng/directive/ngApp)
+   * ng-model (https://code.angularjs.org/1.5.1/docs/api/ng/directive/ngModel)
+  * Two-Way Data Binding (https://code.angularjs.org/1.5.1/docs/guide/databinding)
+  * {{ }} expressões (https://code.angularjs.org/1.5.1/docs/guide/expression)
