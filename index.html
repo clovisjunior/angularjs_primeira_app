@@ -10,7 +10,7 @@
 <body>
 
 	<h1>Minha primeira aplicação AngularJS</h1>
-	
+
 	<div ng-controller="NomeController">
 		<label>Nome: </label>
 		<input type="text" ng-model="nome" placeholder="Digite seu nome"/>
@@ -18,13 +18,13 @@
 	</div>
 
 	<div ng-controller="ExpressaoController">
-		<label>Expressões: </label>		
+		<label>Expressões: </label>
 		<h4>Consigo fazer expressões:</h4>
 		<ul>
 			<li>1 + 10 = {{1+10}}</li>
 			<li>50 - 48 = {{50 - 48}}</li>
 			<li>3 * 7 = {{3 * 7}}</li>
-			<li>8 / 3 = {{8 / 3}}</li>			
+			<li>8 / 3 = {{8 / 3}}</li>
 		</ul>
 
 		<label>Número 1: </label>
@@ -41,19 +41,19 @@
 	<script>
 
 		angular.module("myapp", [])
-		.controller('NomeController', function($scope){
-			$scope.nome = 'João da Silva';
-		})
-		.controller('ExpressaoController', function($scope){
-			$scope.numero1 = 10;
-			$scope.numero2 = 50;
-			$scope.resultado = 0;
+			.controller('NomeController', function($scope){
+				$scope.nome = 'João da Silva';
+			})
+			.controller('ExpressaoController', function($scope){
+				$scope.numero1 = 10;
+				$scope.numero2 = 50;
+				$scope.resultado = 0;
 
-			$scope.somar = function(){
-				$scope.resultado = parseFloat($scope.numero1) + parseFloat($scope.numero2);
-			}
-		});
-		
+				$scope.somar = function(){
+					$scope.resultado = parseFloat($scope.numero1) + parseFloat($scope.numero2);
+				}
+			});
+
 	</script>
 
 </body>
